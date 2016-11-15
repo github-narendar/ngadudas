@@ -1,0 +1,937 @@
+/*hsid.css*/
+/*--------------------------------------
+ *General
+ *-------------------------------------- */
+html {
+    font-family: "Frutiger Roman",Arial,sans-serif;
+}
+
+body {
+  font-family: "Frutiger Roman",Arial,sans-serif;
+  background-color: black; 
+  margin: 0;
+}
+
+/*--------------------------------------
+ *Container Customizations
+ *-------------------------------------- */
+.container-fluid.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-customized.grey-background {
+    background-color: #eeeeee;
+    height: 1100px;
+}
+.container-customized.grey-background.nopadding {
+    background-color: #eeeeee;
+    height: 1100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* --------------------------------------
+ * Typography
+ * ------------------------------------- */
+body,
+div,
+pre,
+form,
+fieldset,
+p,
+blockquote,
+th,
+td {
+  font-size: 16px;
+  color: #16181C; }
+  
+p {
+  margin: 0 0 5px;
+  line-height: 1.5; }
+
+strong,
+.strong {
+  font-weight: bold; }
+
+em, i,
+.italic {
+  font-weight: normal;
+  font-style: italic; }
+
+cite {
+  font-style: normal; }
+label {
+  display: block;
+  margin: 20px 0 0 0;
+  font-family: "Frutiger Roman";
+  color: #555559; }
+.radio,
+.checkbox {
+  display: block;
+  min-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 21px;
+  background: none;
+  border: none;
+  box-shadow: 0 0 0 0 transparent; }
+
+/* --------------------------------------
+ * Headings
+ * ------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  color: #16181C;
+  text-rendering: optimizelegibility;
+  /* Fix the character spacing for headings */
+  line-height: 1.2; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-weight: normal;
+    line-height: 1; }
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  outline: none; }
+
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.mega {
+  font-size: 44px;
+  font-family: "Frutiger Light"; }
+
+h1, .alpha {
+  font-size: 32px;
+  font-family: "Frutiger Light"; }
+
+h2, .beta {
+  font-size: 24px;
+  font-family: "Frutiger Light"; }
+
+h3, .gamma {
+  font-size: 20px;
+  font-family: "Frutiger Light"; }
+
+h4, .delta {
+  font-size: 18px;
+  font-family: "Frutiger Light"; }
+
+h5, .epsilon {
+  font-size: 16px;
+  font-family: "Frutiger Bold"; }
+
+h6, .zeta {
+  font-size: 16px;
+  font-family: "Frutiger Bold"; }
+
+.body-text {
+  font-size: 16px; }
+
+small,
+.milli {
+  font-size: 14px; }
+
+.micro {
+  font-size: 12px; }
+h1 {
+  font-family: "Frutiger Roman"; }
+
+.body-text {
+  font-size: 16px; }
+
+small,
+.milli {
+  font-size: 14px; }
+
+.micro {
+  font-size: 12px; }
+
+/*-------------------------------------
+*Fonts inclusion
+---------------------------------------*/
+@font-face {
+  font-family: 'Frutiger Bold';
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Bold.eot");
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Bold.woff") format("woff"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Roman.eot");
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Roman.woff") format("woff"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Frutiger Light';
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Light.eot");
+  src: url("./fonts/FrutigerLTSTd/FrutigerLTStd-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Light.woff") format("woff"), url("./fonts/FrutigerLTSTd/FrutigerLTStd-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamBoldRegular';
+  src: url("./fonts/gotham/gotham-bold-webfont.eot");
+  src: url("./fonts/gotham/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/gotham/gotham-bold-webfont.woff") format("woff"), url("./fonts/gotham/gotham-bold-webfont.ttf") format("truetype"), url("./fonts/gotham/gotham-bold-webfont.svg#GothamBoldRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamBookRegular';
+  src: url("./fonts/gotham/gotham-book-webfont.eot");
+  src: url("./fonts/gotham/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/gotham/gotham-book-webfont.woff") format("woff"), url("./fonts/gotham/gotham-book-webfont.ttf") format("truetype"), url("./fonts/gotham/gotham-book-webfont.svg#GothamBookRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamMediumRegular';
+  src: url("./fonts/gotham/gotham-medium-webfont.eot");
+  src: url("./fonts/gotham/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/gotham/gotham-medium-webfont.woff") format("woff"), url("./fonts/gotham/gotham-medium-webfont.ttf") format("truetype"), url("./fonts/gotham/gotham-medium-webfont.svg#GothamMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamBlackRegular';
+  src: url("./fonts/gotham/gotham-black-webfont.eot");
+  src: url("./fonts/gotham/gotham-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/gotham/gotham-black-webfont.woff") format("woff"), url("./fonts/gotham/gotham-black-webfont.ttf") format("truetype"), url("./fonts/gotham/gotham-black-webfont.svg#GothamBlackRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothamLightRegular';
+  src: url("./fonts/gotham/gotham-light-webfont.eot");
+  src: url("./fonts/gotham/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/gotham/gotham-light-webfont.woff") format("woff"), url("./fonts/gotham/gotham-light-webfont.ttf") format("truetype"), url("./fonts/gotham/gotham-light-webfont.svg#GothamLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Protoicon";
+  src: url("./fonts/protoicon/protoicon.eot");
+  src: url("./fonts/protoicon/protoicon.eot#iefix") format("embedded-opentype"), url("./fonts/protoicon/protoicon.woff") format("woff"), url("./fonts/protoicon/protoicon.ttf") format("truetype"), url("./fonts/protoicon/protoicon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  
+/*Font awesome for Icons*/
+@font-face{
+	font-family:'FontAwesome';
+	src:url('fonts/font-awesome/4.3.0/fontawesome-webfont.eot?v=4.3.0');
+	src:url('fonts/font-awesome/4.3.0/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('fonts/font-awesome/4.3.0/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),url('fonts/font-awesome/4.3.0/fontawesome-webfont.woff?v=4.3.0') format('woff'),url('fonts/font-awesome/4.3.0/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),url('fonts/font-awesome/4.3.0/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+	}	  
+
+ .form__content, .landing__reg-box {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #D2D0CD;
+  border-bottom: 3px solid #B1B3B3; }
+  
+  .form__content.equalborder{
+  border: 1px solid #D2D0CD;
+  }
+  
+ /*--------------------------------------
+ *HSID css for dynamic content
+ *-------------------------------------- */
+ 
+ .header__return-bar {
+  background-color: #000;
+  color: #fff;
+  margin: 0; }
+  
+  .base-padding {
+  padding: 20px; 
+  }
+  .base-padding-top-20 {
+  padding-top: 20px; 
+  }
+  .base-padding-left-right-40{
+  padding-left: 40px;
+  padding-right: 40px;
+  }
+  
+ .returntologo img {
+    vertical-align: middle;
+    padding-top: 20px;
+    max-height: 80%;
+    max-width: 100%;
+}
+.error {
+  color: #D83A2E;
+}
+.error >div{
+	color: #D83A2E;
+}
+
+.warningText span, .warningTextCircle span {
+    color: #d83a2e;
+    font-weight: 700;
+}
+
+hr {
+  background-color: #B1B3B3;
+  border: 0;
+  height: 1px;
+  margin: 1em 0; }
+  
+.header__return-bar a {
+    color: #fff;
+}
+
+a:hover,a:focus{
+	color:#337ab7;
+}
+
+#verifyPhoneBody{
+	/* margin-top: 25px; */
+}
+#verifyPhoneBody > .continueButtonSubmit{
+	/* margin-bottom: 25px; */
+	margin: 26px 0 0;
+}
+
+.verifyDoNotCloseWindowContent {
+	font-family: "Frutiger Roman";
+    font-size: 14px;
+    color: #d83a2e;
+    word-wrap: break-word;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 20px;
+	margin-bottom: 30px;
+	
+}
+
+.verifyDoNotCloseWindowContent img {
+	padding-right: 6px;
+}
+
+.verifyPhoneForm {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+/* .verifyPhoneMessage {
+	margin-bottom: 9px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+}
+ */
+.verifyPhoneAuthCode {
+    color: #000000;
+    font-family: "Frutiger Bold";
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.verifyPhoneVerification {
+	margin-top: 20px;
+	font-family: "Frutiger Roman";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+    text-align: left;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.verifyPhoneLostConnStatus {
+    color: #d83a2e;
+    font-family: "Frutiger Roman";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+    
+}
+
+.verifyPhoneStatus {
+    color: #555559;
+    font-family: "Frutiger Roman";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    padding-top: 5px;
+}
+
+.verifyPhoneWaitingStatus {
+	font-family: 'Frutiger Roman';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #555559;
+    line-height: 18px;
+	margin-bottom: 10px;
+	margin-left: 100px;
+	width: 605px;
+	text-align: left;
+}
+
+.verifyPhoneWaitingPendingStatus {
+	font-family: 'Frutiger Roman';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #555559;
+    line-height: 18px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-left: 100px;
+	width: 550px;
+	text-align: left;
+}
+
+/* css for middle rectangle*/
+
+.middleRectangle {
+    background-color: #eeeeee;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #747358;
+    font-family: "Frutiger Roman";
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    padding-bottom: 15px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.loader-holder {
+    margin: 5px auto 9px;
+    max-width: 300px;
+}
+
+.loading {
+    float: left;
+    margin-right: 10px;
+    opacity: 1;
+    width: 20%;
+    padding-left: 40px;
+}
+
+.loading-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100px; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Loading button for FF END*/
+
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0); 
+      }
+      
+.fa-chevron-right:before {
+  content: "\f054"; 
+  }
+  
+.fa-check-square:before {
+	 content: "\f14a";
+}
+
+.fa-check:before {
+	 content: "\f00c";
+}
+.fa-chevron-right {
+  font-size: 10px; }
+  
+.fa-check-square {
+  font-size: 22.5px;
+  line-height:0;
+  color: #8A8D8C;
+  margin-left: -1px;
+   }
+   
+.fa-check {
+  font-size: 0.5em; }
+
+
+/* --------------------------------------
+ * Specific css for Pages
+ * --------------------------------------
+ */
+ 
+#rememeberLabel{
+	padding-left: 5px;	
+}
+#messageBox{
+	margin:0 0 20px 0;
+}
+#messageBoxLink{
+	padding-left: 20px;
+}
+#pointerImage {
+    display:none;
+}
+#messageBoxBorderImage {
+	display:none;
+}
+
+#messageBox > p {
+    display: inline;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.rememberThisDevice {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.rememberThisDeviceText p {
+	font-size: 14px;
+	margin-left:25px;
+	margin-top: -10px;
+}
+
+.bottomPageTextRatesApply {
+    font-size: 13px;
+}
+
+.verifyAuthRequestCode p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+.verifyAuthRequestCode p a{
+	text-decoration: none;
+}
+
+.verifyAuthPasscodeBox{
+	width: 195px;
+}
+
+#helpCenterLink1, #helpCenterLink2, #helpCenterLink3, #helpCenterLink4, #helpCenterLink5,#helpCenterLink6,#helpCenterLink7 {
+    margin-bottom: 6px;
+    font-weight:700;
+}
+.authQuestiontext{
+	font-family:inherit;
+	font-size:	16px;
+	line-height:24px;
+	color: inherit;
+	font-weight:normal;
+}
+.challengeSecurityAnswer label{
+	margin-top:10px;
+}
+/* --------------------------------------
+ * Buttons
+ * --------------------------------------
+ *
+ * Table of Contents
+ * -----------------
+ * TODO: create table of contents
+ *
+ ------------------------------------- */
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 14px;
+  font-family: "Frutiger Bold";
+  background-color: #316BBE;
+  color: #fff;
+  border: 1px solid #316BBE;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: normal;
+  padding: 10px 40px;
+  border-radius: 4px;
+  /*&:active,
+    &:focus {
+        background-color: $button--primary-active;
+    }*/ }
+  .button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    background-color: #00396C; }
+  .button.disabled, .button.button--disabled, .button[disabled],
+  input[type="submit"].disabled,
+  input[type="submit"].button--disabled,
+  input[type="submit"][disabled],
+  input[type="reset"].disabled,
+  input[type="reset"].button--disabled,
+  input[type="reset"][disabled],
+  input[type="button"].disabled,
+  input[type="button"].button--disabled,
+  input[type="button"][disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .5;
+    box-shadow: none;
+    background-color: #EEEEEE; }
+    .button.disabled:hover, .button.button--disabled:hover, .button[disabled]:hover,
+    input[type="submit"].disabled:hover,
+    input[type="submit"].button--disabled:hover,
+    input[type="submit"][disabled]:hover,
+    input[type="reset"].disabled:hover,
+    input[type="reset"].button--disabled:hover,
+    input[type="reset"][disabled]:hover,
+    input[type="button"].disabled:hover,
+    input[type="button"].button--disabled:hover,
+    input[type="button"][disabled]:hover {
+      background-color: #fbfbfb; }
+  .button.button--sm,
+  input[type="submit"].button--sm,
+  input[type="reset"].button--sm,
+  input[type="button"].button--sm {
+    font-size: 12px;
+    padding: 15px 20px; }
+  .button.button--full-width,
+  input[type="submit"].button--full-width,
+  input[type="reset"].button--full-width,
+  input[type="button"].button--full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center; }
+  .button.button--primary,
+  input[type="submit"].button--primary,
+  input[type="reset"].button--primary,
+  input[type="button"].button--primary {
+    background-color: #316BBE;
+    color: #fff;
+    border: 1px solid #316BBE;
+    /*&:active,
+        &:focus {
+            background-color: $button--primary-active;
+        }*/ }
+    .button.button--primary:hover,
+    input[type="submit"].button--primary:hover,
+    input[type="reset"].button--primary:hover,
+    input[type="button"].button--primary:hover {
+      background-color: #00396C;
+      text-decoration: none; }
+  .button.button--secondary,
+  input[type="submit"].button--secondary,
+  input[type="reset"].button--secondary,
+  input[type="button"].button--secondary {
+    background-color: #dfe7f2;
+    color: #16181C;
+    border: 1px solid #dfe7f2;
+    /* &:active,
+        &:focus {
+            background-color: $button--secondary-active;
+        }*/ }
+    .button.button--secondary:hover,
+    input[type="submit"].button--secondary:hover,
+    input[type="reset"].button--secondary:hover,
+    input[type="button"].button--secondary:hover {
+      background-color: #f0f3f7; }
+  .button.button--tertiary,
+  input[type="submit"].button--tertiary,
+  input[type="reset"].button--tertiary,
+  input[type="button"].button--tertiary {
+    background-color: #fff;
+    color: #316BBE;
+    border: 1px solid #316BBE;
+    /*&:active,
+        &:focus {
+            background-color: $button--primary-active;
+            color: $white;
+        }*/ }
+    .button.button--tertiary:hover,
+    input[type="submit"].button--tertiary:hover,
+    input[type="reset"].button--tertiary:hover,
+    input[type="button"].button--tertiary:hover {
+      background-color: #00396C;
+      color: #fff; }
+  .button.button--tertiary-white,
+  input[type="submit"].button--tertiary-white,
+  input[type="reset"].button--tertiary-white,
+  input[type="button"].button--tertiary-white {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+     }
+    .button.button--tertiary-white:hover,
+    input[type="submit"].button--tertiary-white:hover,
+    input[type="reset"].button--tertiary-white:hover,
+    input[type="button"].button--tertiary-white:hover {
+      background-color: #fff;
+      color: #316BBE; }
+  .button.button--search,
+  input[type="submit"].button--search,
+  input[type="reset"].button--search,
+  input[type="button"].button--search {
+    margin-left: -5px;
+    border-radius: 0px 4px 4px 0px;
+    box-shadow: inset 0 0 0 #275291; }
+  .button.button--danger,
+  input[type="submit"].button--danger,
+  input[type="reset"].button--danger,
+  input[type="button"].button--danger {
+    background-color: #D83A2E;
+    border-color: #D83A2E; }
+    .button.button--danger:hover,
+    input[type="submit"].button--danger:hover,
+    input[type="reset"].button--danger:hover,
+    input[type="button"].button--danger:hover {
+      background-color: #c73125; }
+
+.alert-button-container {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px; }
+
+.button-rounded {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 12px auto;
+  border-radius: 50px; }
+  .button-rounded label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50px; }
+    .button-rounded label:after {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      border-radius: 50px; }
+  .button-rounded.button-rounded--primary {
+    background-color: #3C66B0; }
+    .button-rounded.button-rounded--primary label {
+      left: 2px;
+      top: 2px; }
+      .button-rounded.button-rounded--primary label:after {
+        color: #fff;
+        content: 'âœ“';
+        top: -1px;
+        left: 4px;
+        opacity: 0; }
+  .button-rounded.button-rounded--secondary {
+    border: 2px solid #fff; }
+    .button-rounded.button-rounded--secondary label {
+      left: 0;
+      top: 0; }
+      .button-rounded.button-rounded--secondary label:after {
+        color: #fff;
+        content: 'âœ“';
+        top: -1px;
+        left: 4px;
+        opacity: 0; }
+  .button-rounded input[type=checkbox] {
+    visibility: hidden; }
+    .button-rounded input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* --------------------------------------
+ * Checkboxes and radios
+ * ---------------------
+ * Indent the labels to position radios/checkboxes as hanging controls.
+ * ------------------------------------- */
+.radio,
+.checkbox {
+  display: block;
+  min-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 21px;
+  background: none;
+  border: none;
+  box-shadow: 0 0 0 0 transparent; }
+  .radio label,
+  .checkbox label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer; }
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-top: 5px; }
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; }
+
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer; }
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; }
+
+input[type="radio"][disabled],
+fieldset[disabled] input[type="radio"],
+input[type="checkbox"][disabled],
+fieldset[disabled]
+input[type="checkbox"],
+.radio[disabled],
+fieldset[disabled]
+.radio,
+.radio-inline[disabled],
+fieldset[disabled]
+.radio-inline,
+.checkbox[disabled],
+fieldset[disabled]
+.checkbox,
+.checkbox-inline[disabled],
+fieldset[disabled]
+.checkbox-inline {
+  cursor: not-allowed; }
+
+.radio__group legend {
+  margin-bottom: 10px; }
+
+/*--------------------------------
+/*Resolution handling for specific elements
+/*----------------------------------*/
+  /*Custoff for popup for mobile*/
+@media (min-width: 320px) {
+.container-customized.grey-background {
+    height: 1250px;
+}
+.container-customized.grey-background.nopadding {
+    height: 1250px;
+}
+}
+@media (min-width: 481px) {
+.container-customized.grey-background {
+    height: 1000px;
+}
+.container-customized.grey-background.nopadding {
+    height: 1000px;
+}
+}
+@media (min-width: 580px) {
+#messageBox {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2.5px 0 rgba(127, 127, 127, 0.8);
+    font-family: "Frutiger Roman";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 122px;
+    left: 245px;
+    padding: 10px;
+    position: absolute;
+    top: -11px;
+    width: 280px;
+}
+#messageBoxBorderImage {
+    display: inline;
+    height: 26px;
+    left: -2px;
+    position: absolute;
+    top: 10px;
+}
+#pointerImage {
+    display: inline;
+    left: -14px;
+    position: absolute;
+    top: 10px;
+}
+}
+  
+  @media (min-width: 768px){
+ 
+  .returntologo {
+    background-color: white;
+    display: block;
+	height: 70px;
+    text-align: center;
+    width: 140px;
+   }
+  }
+  
+
+  @media (min-width: 992px) {
+
+  .returntologo {
+    background-color: white;
+    display: block;
+	height: 80px;
+    text-align: center;
+    width: 200px;
+   }
+  }
+  
+  @media (min-width: 1200px) {
+
+  .returntologo {
+    background-color: white;
+    display: block;
+	height: 80px;
+  /*line-height: 80px;
+    margin-right: 32px;*/
+    text-align: center;
+    width: 230px;
+   }
+  .container {
+    width: 1028px;
+  }
+  }
